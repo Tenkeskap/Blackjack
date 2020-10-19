@@ -6,3 +6,8 @@ To try it, run the script e.g. in command line on Windows. Navigate to file loca
 You can open it in Sublime text or other text editor to check the code first.
 
 If you notice any issues, you can let me know at kelemendavidkrisztian@gmail.com.
+
+Versions
+
+Version 1.2
+This adds a deck reshuffle feature after every six turn.
