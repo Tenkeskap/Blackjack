@@ -14,6 +14,9 @@ import random
 import time
 
 
+#reshuffle counter
+reshuffle = 6
+
 class Card:
     
     def __init__(self,suit,rank):
@@ -459,6 +462,19 @@ while game_on:
     
     #ask player to bet
     player.do_bet()
+
+
+    #deck needs to be reshuffled (recreated and shuffled) after 5 rounds with one player
+    reshuffle -= 1
+    
+    if reshuffle == 0:
+        time.sleep(2)
+        gamedeck = Deck()
+        gamedeck.shuffle()
+        reshuffle = 5
+        
+        print("\nReshuffling deck...")   
+
     time.sleep(2)
 
     #deal 
